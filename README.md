@@ -10,5 +10,6 @@
 -----------------
 
 
-<center>欢迎大家关注我的微信公众号</center>
-![指绘锦绣](http://www.zgljl2012.com/content/images/zh.jpg)<center>扫描上方的二维码关注“指绘锦绣”</center>
+<center>欢迎大家关注我的微信公众号</center><br/>
+![指绘锦绣](http://www.zgljl2012.com/content/images/zh.jpg)<br/>
+<center>扫描上方的二维码关注“指绘锦绣”</center><br/>
