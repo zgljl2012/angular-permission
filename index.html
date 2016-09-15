@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<meta charset="utf-8"/>
+<title>AngularJs实现基于角色的前端访问控制</title>
+<style>
+li:hover { cursor:pointer;text-decoration:underline;}
+button {
+	display:block;
+	margin: 5px 0;
+}
+</style>
+</head>
+<body ng-controller="myCtrl">
+<div>
+用户有两种角色：普通用户和管理员
+</div>
+<select ng-model="role">
+<option value="user">User</option>
+<option value="admin">Admin</option>
+</select>
+<br/><br/><br/>
+<div>
+<span>界面元素权限控制</span>
+<button zg-access="btn01">Admin和User都有此权限</button>
+<button zg-access="btn02">只有Admin才有点击权限以及查看权限</button>
+<button zg-access="btn03" zg-access-level="disabled">只有Admin才有点击权限，User只可查看不可点击</button>
+</div>
+<br/>
+<span>点击跳转</span>
+<ul>
+	<li ng-click="go('tab1')">页面1</li>
+	<li ng-click="go('tab2')">页面2</li>
+	<li ng-click="go('tab3')">页面3</li>
+	<li ng-click="go('tab4')">页面4</li>
+</ul>
+<div ui-view></div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="http://cdn.bootcss.com/angular.js/1.5.8/angular.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
